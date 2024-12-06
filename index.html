@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image-Slider</title>
+
+    <style>
+
+
+body {
+    margin: 0 auto;
+    padding: 50px 40%;
+}
+.btns{
+    margin: 30px 15px;
+    
+}
+.btns button:hover{
+cursor: pointer !important;
+background-color: beige;
+color: black;
+border-radius: 5px;
+
+}
+
+
+        .btn{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="pic">
+    <img src="./img/after(5).webp" id="image" alt="" width="200">
+</div>
+<div class="btn">
+   <div class="btns">
+    <button onclick="thirdImage()" >Third image</button>
+   </div>
+   <div class="btns">
+    <button onclick="secoendImage()" >Second image</button>
+   </div>
+   <div class="btns">
+    <button onclick="firstImage()" >First image</button>
+   </div>
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+        function thirdImage(){
+            var img = document.getElementById('image')
+            img.src ='./img/images (12).jpg'
+        }
+
+        function secoendImage(){
+            var img = document.getElementById('image')
+            img.src ='./img/download.jpg'
+        }
+        function firstImage(){
+            var img = document.getElementById('image')
+            img.src ='./img/images.jpg'
+        }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
